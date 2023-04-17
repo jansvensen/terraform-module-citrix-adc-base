@@ -2,17 +2,17 @@
 # Set NS Hostname
 #####
 resource "citrixadc_nshostname" "base_hostname" {
-   hostname = var.adc-base.hostname
+   hostname = var.vm.hostname
 }
 
 #####
 # Add NSIP
 #####
 resource "citrixadc_nsip" "base_snip" {
-  ipaddress = var.adc-base-snip.ip
-  netmask   = var.adc-base-snip.netmask
-  type      = var.adc-base-snip.type
-  icmp      = var.adc-base-snip.icmp
+  ipaddress = var.adc-snip.ip
+  netmask   = var.adc-snip.netmask
+  icmp      = var.adc-snip.icmp
+  type      = "SNIP"
 }
 
 #####
