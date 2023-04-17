@@ -3,4 +3,4 @@
 #####
 variable vm {}
 variable adc-base {}
-variable adc-base-snip {}
+variable adc-snip {}
